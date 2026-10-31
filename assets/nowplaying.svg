@@ -18,7 +18,7 @@
   <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [media:spotify_sync]</text>
-  <text x="446" y="18" class="mono tag" fill="#A6E22E" text-anchor="end">[sync: listening]</text>
+  <text x="446" y="18" class="mono tag" fill="#75715E" text-anchor="end">[status: idle]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
   <!-- Inner Media Card -->
@@ -29,10 +29,9 @@
     <g transform="translate(12, 12)">
       <rect x="0" y="0" width="48" height="48" rx="6" fill="#272822" stroke="#3E3D32" stroke-width="1"/>
       <circle cx="24" cy="24" r="16" fill="#1E1F1C"/>
-      <!-- Waves -->
-      <path d="M14 20 C20 18, 28 18, 34 20" stroke="#A6E22E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-      <path d="M16 24 C21 22, 27 22, 32 24" stroke="#A6E22E" stroke-width="2" stroke-linecap="round" fill="none"/>
-      <path d="M18 28 C22 26.5, 26 26.5, 30 28" stroke="#A6E22E" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <path d="M14 20 C20 18, 28 18, 34 20" stroke="#75715E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M16 24 C21 22, 27 22, 32 24" stroke="#75715E" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M18 28 C22 26.5, 26 26.5, 30 28" stroke="#75715E" stroke-width="1.8" stroke-linecap="round" fill="none"/>
     </g>
 
     <!-- Track & Info -->
@@ -41,34 +40,11 @@
 
     <!-- Kinetix 24-segment Discrete Track Bar -->
     <g transform="translate(72, 48)">
-      <rect x="0" y="0" width="6" height="6" rx="1" fill="#A6E22E"/>
-      <rect x="8" y="0" width="6" height="6" rx="1" fill="#A6E22E"/>
-      <rect x="16" y="0" width="6" height="6" rx="1" fill="#A6E22E"/>
-      <rect x="24" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="32" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="40" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="48" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="56" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="64" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="72" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="80" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="88" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="96" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="104" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="112" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="120" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="128" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="136" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="144" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="152" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="160" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="168" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="176" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
-      <rect x="184" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
+      <rect x="0" y="0" width="6" height="6" rx="1" fill="#75715E"/><rect x="8" y="0" width="6" height="6" rx="1" fill="#75715E"/><rect x="16" y="0" width="6" height="6" rx="1" fill="#75715E"/><rect x="24" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="32" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="40" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="48" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="56" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="64" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="72" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="80" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="88" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="96" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="104" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="112" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="120" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="128" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="136" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="144" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="152" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="160" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="168" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="176" y="0" width="6" height="6" rx="1" fill="#3E3D32"/><rect x="184" y="0" width="6" height="6" rx="1" fill="#3E3D32"/>
     </g>
 
     <!-- Meta / Client Info -->
     <text x="272" y="54" class="mono meta">pipewire / adb</text>
-    <text x="430" y="54" class="mono tag" fill="#66D9EF" text-anchor="end">[sync-rs v0.1]</text>
+    <text x="430" y="54" class="mono tag" fill="#66D9EF" text-anchor="end">[device: idle]</text>
   </g>
 </svg>
