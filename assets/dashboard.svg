@@ -76,15 +76,12 @@
   <text x="68" y="436" class="mono spec-val">aarch64 / arm64-v8a</text>
 
   </g>
-  <g id="stack-pipeline" transform="translate(498, 0)">
+  <g id="stack-shards" transform="translate(498, 0)">
     
   <defs>
     <style>
       .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, ui-monospace, monospace; }
       .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
-      .bus-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.5px; }
-      .node-txt { font-size: 10.5px; font-weight: 600; }
-      .arrow-tag { font-size: 8.5px; font-weight: 500; }
       .tag { font-size: 9.5px; font-weight: 600; }
     </style>
   </defs>
@@ -92,95 +89,102 @@
   <!-- Container -->
   <rect x="0.5" y="0.5" width="469" height="235" rx="8" fill="#272822" stroke="#3E3D32" stroke-width="1"/>
 
-  <!-- Titlebar -->
+  <!-- Titlebar (Zero Overlap) -->
   <rect x="14" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="20" class="mono lbl">ametist1337@driftwm: ~ [stack:architecture_topology]</text>
-  <text x="446" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[topology: active]</text>
+  <text x="50" y="20" class="mono lbl">ametist1337@driftwm: ~ [stack:shards]</text>
+  <text x="446" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[orbit: zero-g]</text>
   <line x1="0" y1="30" x2="470" y2="30" stroke="#3E3D32" stroke-width="1"/>
 
-  <!-- bus:systems -->
-  <g>
-    <rect x="14" y="38" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-    <text x="24" y="52" class="mono bus-lbl" fill="#A6E22E">bus:systems</text>
-    
-    <!-- Node 1 -->
-    <rect x="24" y="64" width="104" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
-    <text x="76" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">rust · c++</text>
-    
-    <!-- Arrow 1 -->
-    <text x="148" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ipc]</text>
-    <line x1="132" y1="76" x2="162" y2="76" stroke="#75715E" stroke-width="1"/>
-    <polygon points="164,76 160,73 160,79" fill="#75715E"/>
-    
-    <!-- Node 2 -->
-    <rect x="168" y="64" width="112" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
-    <text x="224" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">wayland / drm</text>
-    
-    <!-- Arrow 2 -->
-    <text x="300" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[render]</text>
-    <line x1="284" y1="76" x2="314" y2="76" stroke="#75715E" stroke-width="1"/>
-    <polygon points="316,76 312,73 312,79" fill="#75715E"/>
-    
-    <!-- Node 3 -->
-    <rect x="320" y="64" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
-    <text x="383" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">driftwm [canvas]</text>
-  </g>
-  <!-- bus:mobile_internals -->
-  <g>
-    <rect x="14" y="102" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-    <text x="24" y="116" class="mono bus-lbl" fill="#66D9EF">bus:mobile_internals</text>
-    
-    <!-- Node 1 -->
-    <rect x="24" y="128" width="104" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
-    <text x="76" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kotlin · flutter</text>
-    
-    <!-- Arrow 1 -->
-    <text x="148" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[binder]</text>
-    <line x1="132" y1="140" x2="162" y2="140" stroke="#75715E" stroke-width="1"/>
-    <polygon points="164,140 160,137 160,143" fill="#75715E"/>
-    
-    <!-- Node 2 -->
-    <rect x="168" y="128" width="112" height="24" rx="4" fill="#272822" stroke="#FD971F" stroke-width="1"/>
-    <text x="224" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">android ndk</text>
-    
-    <!-- Arrow 2 -->
-    <text x="300" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[root]</text>
-    <line x1="284" y1="140" x2="314" y2="140" stroke="#75715E" stroke-width="1"/>
-    <polygon points="316,140 312,137 312,143" fill="#75715E"/>
-    
-    <!-- Node 3 -->
-    <rect x="320" y="128" width="126" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
-    <text x="383" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kernelsu · lsposed</text>
-  </g>
-  <!-- bus:frontend_motion -->
-  <g>
-    <rect x="14" y="166" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-    <text x="24" y="180" class="mono bus-lbl" fill="#FD971F">bus:frontend_motion</text>
-    
-    <!-- Node 1 -->
-    <rect x="24" y="192" width="104" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
-    <text x="76" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">frontend · ts</text>
-    
-    <!-- Arrow 1 -->
-    <text x="148" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ode_math]</text>
-    <line x1="132" y1="204" x2="162" y2="204" stroke="#75715E" stroke-width="1"/>
-    <polygon points="164,204 160,201 160,207" fill="#75715E"/>
-    
-    <!-- Node 2 -->
-    <rect x="168" y="192" width="112" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
-    <text x="224" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">shaders / canvas</text>
-    
-    <!-- Arrow 2 -->
-    <text x="300" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[monet]</text>
-    <line x1="284" y1="204" x2="314" y2="204" stroke="#75715E" stroke-width="1"/>
-    <polygon points="316,204 312,201 312,207" fill="#75715E"/>
-    
-    <!-- Node 3 -->
-    <rect x="320" y="192" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
-    <text x="383" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kinetix-ui ds</text>
-  </g>
+
+    <!-- Floating Zero-G Debris & Trajectory Arcs -->
+    <path d="M70 76 Q 130 90 180 102" stroke="#3E3D32" stroke-width="0.8" stroke-dasharray="3,3" fill="none"/>
+    <path d="M228 116 Q 290 120 360 114" stroke="#3E3D32" stroke-width="0.8" stroke-dasharray="3,3" fill="none"/>
+    <path d="M110 180 Q 180 150 250 178" stroke="#3E3D32" stroke-width="0.8" stroke-dasharray="3,3" fill="none"/>
+    <path d="M290 56 Q 340 70 380 58" stroke="#3E3D32" stroke-width="0.8" stroke-dasharray="3,3" fill="none"/>
+
+    <!-- Micro Shards -->
+    <rect x="122" y="78" width="4" height="4" rx="1" fill="#E6DB74" opacity="0.6" transform="rotate(45 124 80)"/>
+    <rect x="236" y="82" width="3" height="3" rx="1" fill="#A6E22E" opacity="0.7" transform="rotate(30 237 83)"/>
+    <rect x="348" y="78" width="4" height="4" rx="1" fill="#66D9EF" opacity="0.6" transform="rotate(60 350 80)"/>
+    <rect x="118" y="146" width="3" height="3" rx="1" fill="#F92672" opacity="0.7" transform="rotate(15 119 147)"/>
+    <rect x="242" y="148" width="4" height="4" rx="1" fill="#FD971F" opacity="0.6" transform="rotate(45 244 150)"/>
+    <rect x="346" y="144" width="3" height="3" rx="1" fill="#A6E22E" opacity="0.7" transform="rotate(45 347 145)"/>
+
+
+    <!-- Shard: rust -->
+    <g transform="translate(26, 48) rotate(-4, 43.0, 15.0)">
+      <polygon points="6,0 86,0 86,24 80,30 0,30 0,6" fill="#1E1F1C" stroke="#E6DB74" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#E6DB74" stroke-width="1.5"/>
+      <text x="43.0" y="19.0" class="mono" fill="#F8F8F2" font-size="11.5px" font-weight="700" text-anchor="middle">rust</text>
+    </g>
+    <!-- Shard: wayland -->
+    <g transform="translate(140, 42) rotate(3, 44.0, 13.0)">
+      <polygon points="4,0 88,0 88,22 84,26 0,26 0,4" fill="#1E1F1C" stroke="#66D9EF" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#66D9EF" stroke-width="1.5"/>
+      <text x="44.0" y="17.0" class="mono" fill="#66D9EF" font-size="10px" font-weight="600" text-anchor="middle">wayland</text>
+    </g>
+    <!-- Shard: kotlin -->
+    <g transform="translate(252, 46) rotate(-2, 46.0, 15.0)">
+      <polygon points="6,0 92,0 92,24 86,30 0,30 0,6" fill="#1E1F1C" stroke="#A6E22E" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#A6E22E" stroke-width="1.5"/>
+      <text x="46.0" y="19.0" class="mono" fill="#F8F8F2" font-size="11.5px" font-weight="700" text-anchor="middle">kotlin</text>
+    </g>
+    <!-- Shard: kernelsu -->
+    <g transform="translate(366, 44) rotate(5, 44.0, 13.0)">
+      <polygon points="4,0 88,0 88,22 84,26 0,26 0,4" fill="#1E1F1C" stroke="#F92672" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#F92672" stroke-width="1.5"/>
+      <text x="44.0" y="17.0" class="mono" fill="#F92672" font-size="10px" font-weight="600" text-anchor="middle">kernelsu</text>
+    </g>
+    <!-- Shard: shaders -->
+    <g transform="translate(24, 108) rotate(3, 41.0, 13.0)">
+      <polygon points="4,0 82,0 82,22 78,26 0,26 0,4" fill="#1E1F1C" stroke="#E6DB74" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#E6DB74" stroke-width="1.5"/>
+      <text x="41.0" y="17.0" class="mono" fill="#E6DB74" font-size="10px" font-weight="600" text-anchor="middle">shaders</text>
+    </g>
+    <!-- Shard: frontend -->
+    <g transform="translate(130, 102) rotate(-3, 50.0, 15.0)">
+      <polygon points="6,0 100,0 100,24 94,30 0,30 0,6" fill="#1E1F1C" stroke="#F92672" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#F92672" stroke-width="1.5"/>
+      <text x="50.0" y="19.0" class="mono" fill="#F8F8F2" font-size="11.5px" font-weight="700" text-anchor="middle">frontend</text>
+    </g>
+    <!-- Shard: driftwm -->
+    <g transform="translate(254, 106) rotate(2, 43.0, 13.0)">
+      <polygon points="4,0 86,0 86,22 82,26 0,26 0,4" fill="#1E1F1C" stroke="#A6E22E" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#A6E22E" stroke-width="1.5"/>
+      <text x="43.0" y="17.0" class="mono" fill="#A6E22E" font-size="10px" font-weight="600" text-anchor="middle">driftwm</text>
+    </g>
+    <!-- Shard: flutter -->
+    <g transform="translate(362, 102) rotate(-3, 46.0, 15.0)">
+      <polygon points="6,0 92,0 92,24 86,30 0,30 0,6" fill="#1E1F1C" stroke="#66D9EF" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#66D9EF" stroke-width="1.5"/>
+      <text x="46.0" y="19.0" class="mono" fill="#F8F8F2" font-size="11.5px" font-weight="700" text-anchor="middle">flutter</text>
+    </g>
+    <!-- Shard: cpp -->
+    <g transform="translate(36, 166) rotate(-5, 38.0, 14.0)">
+      <polygon points="6,0 76,0 76,22 70,28 0,28 0,6" fill="#1E1F1C" stroke="#FD971F" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#FD971F" stroke-width="1.5"/>
+      <text x="38.0" y="18.0" class="mono" fill="#F8F8F2" font-size="11.5px" font-weight="700" text-anchor="middle">c++</text>
+    </g>
+    <!-- Shard: ode -->
+    <g transform="translate(136, 168) rotate(3, 51.0, 13.0)">
+      <polygon points="4,0 102,0 102,22 98,26 0,26 0,4" fill="#1E1F1C" stroke="#75715E" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#75715E" stroke-width="1.5"/>
+      <text x="51.0" y="17.0" class="mono" fill="#E6DB74" font-size="10px" font-weight="600" text-anchor="middle">ode-springs</text>
+    </g>
+    <!-- Shard: binder -->
+    <g transform="translate(260, 166) rotate(-3, 40.0, 13.0)">
+      <polygon points="4,0 80,0 80,22 76,26 0,26 0,4" fill="#1E1F1C" stroke="#FD971F" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#FD971F" stroke-width="1.5"/>
+      <text x="40.0" y="17.0" class="mono" fill="#FD971F" font-size="10px" font-weight="600" text-anchor="middle">binder</text>
+    </g>
+    <!-- Shard: art -->
+    <g transform="translate(356, 168) rotate(4, 48.0, 13.0)">
+      <polygon points="4,0 96,0 96,22 92,26 0,26 0,4" fill="#1E1F1C" stroke="#A6E22E" stroke-width="1.2"/>
+      <line x1="0" y1="4" x2="4" y2="0" stroke="#A6E22E" stroke-width="1.5"/>
+      <text x="48.0" y="17.0" class="mono" fill="#A6E22E" font-size="10px" font-weight="600" text-anchor="middle">android ndk</text>
+    </g>
 
   </g>
   <g id="stack-vibecode" transform="translate(498, 244)">
@@ -192,6 +196,12 @@
       .title { font-size: 14.5px; font-weight: 700; fill: #F8F8F2; }
       .sub { font-size: 10.5px; fill: #75715E; }
     </style>
+    <linearGradient id="antigravity-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3688FF"/>
+      <stop offset="45%" stop-color="#82C55C"/>
+      <stop offset="75%" stop-color="#F2A41E"/>
+      <stop offset="100%" stop-color="#E55052"/>
+    </linearGradient>
   </defs>
 
   <!-- Container -->
@@ -204,16 +214,12 @@
   <text x="50" y="18" class="mono lbl">ametist1337@driftwm: ~ [runtime:antigravity]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
-  <!-- Antigravity Faceted Logo Glyph (y: 42 to 92, x: 24 to 68) -->
+  <!-- Official Google Antigravity Archway Logo -->
   <g transform="translate(24, 38)">
-    <!-- Inner Card for Logo -->
     <rect x="-6" y="-3" width="56" height="64" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-    <!-- Facet Top -->
-    <polygon points="4,12 40,12 22,27" fill="#E6DB74" opacity="0.95"/>
-    <!-- Facet Left -->
-    <polygon points="4,12 22,27 22,48" fill="#66D9EF" opacity="0.9"/>
-    <!-- Facet Right -->
-    <polygon points="40,12 22,27 22,48" fill="#F92672" opacity="0.9"/>
+    <svg x="-1" y="4" width="46" height="50" viewBox="12 14 40 38">
+      <path fill="url(#antigravity-grad)" d="M14.372 48.786c-.493-.193-.667-.419-.667-.865 0-.596.324-1.13 1.346-2.213 2.14-2.269 3.587-4.983 5.106-9.574.478-1.446.812-2.586 2.387-8.163.928-3.286 1.767-5.68 2.591-7.4 1.452-3.03 3.176-4.725 5.364-5.274.523-.131.78-.158 1.537-.158 1.973 0 3.28.57 4.711 2.056.76.789 1.385 1.715 2.044 3.023.948 1.883 1.76 4.18 2.866 8.102.355 1.258.887 3.145 1.184 4.193 1.462 5.175 2.771 8.423 4.38 10.87.59.9 1.034 1.455 1.922 2.403.86.917 1.152 1.427 1.152 2.008 0 .304-.03.402-.167.566-.481.572-1.532.641-2.54.166-1.236-.582-3.272-2.376-4.634-4.085-.8-1.003-1.847-2.608-3.015-4.623-2.28-3.93-3.322-5.15-5.109-5.975-.892-.413-1.382-.501-2.767-.502-1.29 0-1.547.038-2.398.35-1.133.416-2.097 1.153-3.03 2.316-.663.828-1.09 1.486-2.322 3.589-1.209 2.06-2.28 3.725-2.965 4.605-1.741 2.24-4.1 4.207-5.483 4.575-.414.11-1.224.115-1.493.01"/>
+    </svg>
   </g>
 
   <!-- Vibecode Description -->
