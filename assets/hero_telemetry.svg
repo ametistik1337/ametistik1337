@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="480" viewBox="0 0 490 480" fill="none">
+  <defs>
+    <style>
+      .mono {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, ui-monospace, monospace;
+      }
+      .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
+      .title { font-size: 20px; font-weight: 700; fill: #F8F8F2; }
+      .role { font-size: 11.5px; fill: #66D9EF; font-weight: 500; }
+      .node-hdr { font-size: 11px; font-weight: 700; }
+      .spec-text { font-size: 10.5px; fill: #F8F8F2; }
+      .spec-dim { font-size: 10.5px; fill: #75715E; }
+      .spec-val { font-size: 10.5px; fill: #E6DB74; }
+      .tag { font-size: 9.5px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Window Container with Hyprland Active Border -->
+  <rect x="0.5" y="0.5" width="489" height="479" rx="8" fill="#272822" stroke="#F92672" stroke-width="1"/>
+
+  <!-- Hyprland Titlebar -->
+  <rect x="14" y="14" width="6" height="6" rx="1.5" fill="#F92672"/>
+  <rect x="24" y="14" width="6" height="6" rx="1.5" fill="#E6DB74"/>
+  <rect x="34" y="14" width="6" height="6" rx="1.5" fill="#A6E22E"/>
+  <text x="50" y="20" class="mono lbl">ametist@driftwm: ~ [master:1]</text>
+  <text x="440" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[online]</text>
+  <line x1="0" y1="30" x2="490" y2="30" stroke="#3E3D32" stroke-width="1"/>
+
+  <!-- ID Card Section -->
+  <rect x="14" y="40" width="462" height="88" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="56" class="mono lbl">ID_MANIFEST</text>
+  <text x="26" y="80" class="mono title">ametist</text>
+  <text x="26" y="98" class="mono role">systems &amp; android internals engineer</text>
+  <text x="26" y="116" class="mono tag" fill="#E6DB74">spec: v1.2 / kinetix-ds</text>
+  <text x="175" y="116" class="mono tag" fill="#75715E">·</text>
+  <text x="188" y="116" class="mono tag" fill="#A6E22E">arch: x86_64 / aarch64</text>
+  <text x="330" y="116" class="mono tag" fill="#75715E">·</text>
+  <text x="343" y="116" class="mono tag" fill="#66D9EF">zero-slop</text>
+
+  <!-- Node 1: Workstation -->
+  <rect x="14" y="136" width="462" height="116" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="153" class="mono node-hdr" fill="#A6E22E">node:workstation</text>
+  <text x="464" y="153" class="mono tag" fill="#75715E" text-anchor="end">[host / local]</text>
+  
+  <text x="26" y="172" class="mono spec-dim">cpu:</text>
+  <text x="65" y="172" class="mono spec-text">amd ryzen 7 5700x (8c/16t, 4.67 ghz)</text>
+
+  <text x="26" y="189" class="mono spec-dim">ram:</text>
+  <text x="65" y="189" class="mono spec-text">16 gb ddr4-3200 · zram 15.5 gb swap</text>
+
+  <text x="26" y="206" class="mono spec-dim">gpu:</text>
+  <text x="65" y="206" class="mono spec-text">nvidia geforce gtx 1050 ti 4gb</text>
+
+  <text x="26" y="223" class="mono spec-dim">os: </text>
+  <text x="65" y="223" class="mono spec-val">cachyos linux x86_64 [7.3-bore]</text>
+
+  <text x="26" y="240" class="mono spec-dim">wm: </text>
+  <text x="65" y="240" class="mono" fill="#66D9EF" font-size="10.5px">driftwm [wayland infinite canvas]</text>
+
+  <!-- Node 2: Mobile Dev -->
+  <rect x="14" y="260" width="462" height="96" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="277" class="mono node-hdr" fill="#66D9EF">node:mobile_dev</text>
+  <text x="464" y="277" class="mono tag" fill="#75715E" text-anchor="end">[target: tegu]</text>
+
+  <text x="26" y="296" class="mono spec-dim">dev: </text>
+  <text x="65" y="296" class="mono spec-text">google pixel 9a [android 16 / v15]</text>
+
+  <text x="26" y="313" class="mono spec-dim">root:</text>
+  <text x="65" y="313" class="mono" fill="#FD971F" font-size="10.5px">kernelsu · lsposed · su root-shell</text>
+
+  <text x="26" y="330" class="mono spec-dim">link:</text>
+  <text x="65" y="330" class="mono spec-text">wireless adb [192.168.0.123] · pairing active</text>
+
+  <text x="26" y="347" class="mono spec-dim">mods:</text>
+  <text x="65" y="347" class="mono spec-val">spotifyplus fe · pixelmediachip</text>
+
+  <!-- Node 3: GPU Compute Node -->
+  <rect x="14" y="364" width="462" height="102" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="381" class="mono node-hdr" fill="#FD971F">node:gpu_compute</text>
+  <text x="464" y="381" class="mono tag" fill="#75715E" text-anchor="end">[cluster: 192.168.0.177]</text>
+
+  <text x="26" y="400" class="mono spec-dim">host:</text>
+  <text x="65" y="400" class="mono spec-text">intel core i5-13400 (10c/16t) · 32 gb ddr4</text>
+
+  <text x="26" y="417" class="mono spec-dim">gpu: </text>
+  <text x="65" y="417" class="mono spec-text">geforce rtx 4060 ti 8gb vram</text>
+
+  <text x="26" y="434" class="mono spec-dim">llm: </text>
+  <text x="65" y="434" class="mono spec-val">qwen 3.5 9b abliterated [100% vram, 64k]</text>
+
+  <text x="26" y="451" class="mono spec-dim">asr: </text>
+  <text x="65" y="451" class="mono" fill="#A6E22E" font-size="10.5px">whisper-large-v3 turbo [cuda 12, ~0.6s]</text>
+</svg>

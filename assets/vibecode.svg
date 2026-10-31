@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="110" viewBox="0 0 470 110" fill="none">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, ui-monospace, monospace; }
+      .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
+      .title { font-size: 14.5px; font-weight: 700; fill: #F8F8F2; }
+      .sub { font-size: 10.5px; fill: #75715E; }
+      .tag { font-size: 9.5px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="0.5" y="0.5" width="469" height="109" rx="8" fill="#272822" stroke="#3E3D32" stroke-width="1"/>
+
+  <!-- Titlebar -->
+  <rect x="14" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [runtime:antigravity]</text>
+  <text x="446" y="18" class="mono tag" fill="#A6E22E" text-anchor="end">[vibecoding: active]</text>
+  <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
+
+  <!-- Antigravity Faceted Logo Glyph (y: 42 to 92, x: 24 to 68) -->
+  <g transform="translate(24, 38)">
+    <!-- Inner Card for Logo -->
+    <rect x="-6" y="-3" width="56" height="64" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <!-- Facet Top -->
+    <polygon points="4,12 40,12 22,27" fill="#E6DB74" opacity="0.95"/>
+    <!-- Facet Left -->
+    <polygon points="4,12 22,27 22,48" fill="#66D9EF" opacity="0.9"/>
+    <!-- Facet Right -->
+    <polygon points="40,12 22,27 22,48" fill="#F92672" opacity="0.9"/>
+  </g>
+
+  <!-- Vibecode Description -->
+  <g transform="translate(90, 48)">
+    <text x="0" y="8" class="mono title">
+      <tspan fill="#F8F8F2">i </tspan>
+      <tspan fill="#F92672">&lt;3 </tspan>
+      <tspan fill="#F8F8F2">gemini vibecode</tspan>
+    </text>
+
+    <text x="0" y="27" class="mono sub">
+      <tspan fill="#75715E">model: </tspan>
+      <tspan fill="#E6DB74" font-weight="600">gemini 3.8 flash</tspan>
+      <tspan fill="#75715E"> · effort: </tspan>
+      <tspan fill="#A6E22E" font-weight="600">high</tspan>
+    </text>
+
+    <text x="0" y="44" class="mono sub">
+      <tspan fill="#75715E">agent: </tspan>
+      <tspan fill="#66D9EF">google antigravity</tspan>
+      <tspan fill="#75715E"> · zero-slop autonomous coding</tspan>
+    </text>
+  </g>
+</svg>
