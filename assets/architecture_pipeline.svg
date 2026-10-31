@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="236" viewBox="0 0 470 236" fill="none">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, ui-monospace, monospace; }
+      .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
+      .bus-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.5px; }
+      .node-txt { font-size: 10.5px; font-weight: 600; }
+      .arrow-tag { font-size: 8.5px; font-weight: 500; }
+      .tag { font-size: 9.5px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="0.5" y="0.5" width="469" height="235" rx="8" fill="#272822" stroke="#3E3D32" stroke-width="1"/>
+
+  <!-- Titlebar -->
+  <rect x="14" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <rect x="24" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <rect x="34" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
+  <text x="50" y="20" class="mono lbl">ametist1337@driftwm: ~ [stack:architecture_topology]</text>
+  <text x="446" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[topology: active]</text>
+  <line x1="0" y1="30" x2="470" y2="30" stroke="#3E3D32" stroke-width="1"/>
+
+  <!-- bus:systems -->
+  <g>
+    <rect x="14" y="38" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="52" class="mono bus-lbl" fill="#A6E22E">bus:systems</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="64" width="104" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
+    <text x="76" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">rust · c++</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ipc]</text>
+    <line x1="132" y1="76" x2="162" y2="76" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,76 160,73 160,79" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="64" width="112" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
+    <text x="224" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">wayland / drm</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[render]</text>
+    <line x1="284" y1="76" x2="314" y2="76" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,76 312,73 312,79" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="64" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
+    <text x="383" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">driftwm [canvas]</text>
+  </g>
+  <!-- bus:mobile_internals -->
+  <g>
+    <rect x="14" y="102" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="116" class="mono bus-lbl" fill="#66D9EF">bus:mobile_internals</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="128" width="104" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
+    <text x="76" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kotlin · flutter</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[binder]</text>
+    <line x1="132" y1="140" x2="162" y2="140" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,140 160,137 160,143" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="128" width="112" height="24" rx="4" fill="#272822" stroke="#FD971F" stroke-width="1"/>
+    <text x="224" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">android ndk</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[root]</text>
+    <line x1="284" y1="140" x2="314" y2="140" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,140 312,137 312,143" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="128" width="126" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
+    <text x="383" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kernelsu · lsposed</text>
+  </g>
+  <!-- bus:frontend_motion -->
+  <g>
+    <rect x="14" y="166" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="180" class="mono bus-lbl" fill="#FD971F">bus:frontend_motion</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="192" width="104" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
+    <text x="76" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">frontend · ts</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ode_math]</text>
+    <line x1="132" y1="204" x2="162" y2="204" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,204 160,201 160,207" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="192" width="112" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
+    <text x="224" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">shaders / canvas</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[monet]</text>
+    <line x1="284" y1="204" x2="314" y2="204" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,204 312,201 312,207" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="192" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
+    <text x="383" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kinetix-ui ds</text>
+  </g>
+</svg>

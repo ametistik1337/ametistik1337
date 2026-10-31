@@ -5,7 +5,6 @@
       .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
       .title { font-size: 14.5px; font-weight: 700; fill: #F8F8F2; }
       .sub { font-size: 10.5px; fill: #75715E; }
-      .tag { font-size: 9.5px; font-weight: 600; }
     </style>
   </defs>
 
@@ -16,8 +15,7 @@
   <rect x="14" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [runtime:antigravity]</text>
-  <text x="446" y="18" class="mono tag" fill="#A6E22E" text-anchor="end">[vibecoding: active]</text>
+  <text x="50" y="18" class="mono lbl">ametist1337@driftwm: ~ [runtime:antigravity]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
   <!-- Antigravity Faceted Logo Glyph (y: 42 to 92, x: 24 to 68) -->
@@ -50,7 +48,7 @@
     <text x="0" y="44" class="mono sub">
       <tspan fill="#75715E">agent: </tspan>
       <tspan fill="#66D9EF">google antigravity</tspan>
-      <tspan fill="#75715E"> · zero-slop autonomous coding</tspan>
+      <tspan fill="#75715E"> · autonomous pair programming</tspan>
     </text>
   </g>
 </svg>

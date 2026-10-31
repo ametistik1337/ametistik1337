@@ -1,9 +1,9 @@
 <div align="center">
 
-# `ametist`
+# `ametist1337`
 
 ```text
-systems & android internals engineer · cachyos linux · driftwm · kinetix-ds
+systems & android internals engineer · cachyos linux · driftwm · kinetix-ui
 ```
 
 <br/>
@@ -15,7 +15,7 @@ systems & android internals engineer · cachyos linux · driftwm · kinetix-ds
       <img src="assets/hero_telemetry.svg" width="490" alt="Hero &amp; Hardware Telemetry" />
     </td>
     <td valign="top">
-      <img src="assets/stack_gauges.svg" width="470" alt="Stack 24-Segment Gauges" />
+      <img src="assets/stack_gauges.svg" width="470" alt="Architecture &amp; Stack Topology" />
     </td>
   </tr>
   <tr>
@@ -33,9 +33,8 @@ systems & android internals engineer · cachyos linux · driftwm · kinetix-ds
 <br/>
 
 ```text
-status: active · wm: driftwm (wayland) · stack: rust / kotlin / c++ / ts
-cluster: workstation (5700x) · mobile_dev (pixel 9a) · gpu_node (4060 ti)
-spec: kinetix-ds v1.2 · zero-slop engineering
+status: active · wm: driftwm (wayland) · stack: rust / kotlin / flutter / c++ / frontend
+nodes: workstation (5700x / cachyos) · mobile_dev (pixel 9a / kernelsu)
 ```
 
 </div>

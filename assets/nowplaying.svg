@@ -17,7 +17,7 @@
   <rect x="14" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [media:spotify_sync]</text>
+  <text x="50" y="18" class="mono lbl">ametist1337@driftwm: ~ [media:spotify_sync]</text>
   <text x="446" y="18" class="mono tag" fill="#75715E" text-anchor="end">[status: idle]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
@@ -44,7 +44,6 @@
     </g>
 
     <!-- Meta / Client Info -->
-    <text x="272" y="54" class="mono meta">pipewire / adb</text>
     <text x="430" y="54" class="mono tag" fill="#66D9EF" text-anchor="end">[device: idle]</text>
   </g>
 </svg>

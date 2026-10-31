@@ -9,12 +9,12 @@
       }
       .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
       .title { font-size: 20px; font-weight: 700; fill: #F8F8F2; }
-      .role { font-size: 11.5px; fill: #66D9EF; font-weight: 500; }
+      .role { font-size: 12px; fill: #66D9EF; font-weight: 500; }
       .node-hdr { font-size: 11px; font-weight: 700; }
-      .spec-text { font-size: 10.5px; fill: #F8F8F2; }
-      .spec-dim { font-size: 10.5px; fill: #75715E; }
-      .spec-val { font-size: 10.5px; fill: #E6DB74; }
-      .tag { font-size: 9.5px; font-weight: 600; }
+      .spec-text { font-size: 11px; fill: #F8F8F2; }
+      .spec-dim { font-size: 11px; fill: #75715E; }
+      .spec-val { font-size: 11px; fill: #E6DB74; }
+      .tag { font-size: 10px; font-weight: 600; }
     </style>
   </defs>
 
@@ -25,85 +25,67 @@
   <rect x="14" y="14" width="6" height="6" rx="1.5" fill="#F92672"/>
   <rect x="24" y="14" width="6" height="6" rx="1.5" fill="#E6DB74"/>
   <rect x="34" y="14" width="6" height="6" rx="1.5" fill="#A6E22E"/>
-  <text x="50" y="20" class="mono lbl">ametist@driftwm: ~ [master:1]</text>
+  <text x="50" y="20" class="mono lbl">ametist1337@driftwm: ~ [master:1]</text>
   <text x="440" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[online]</text>
   <line x1="0" y1="30" x2="490" y2="30" stroke="#3E3D32" stroke-width="1"/>
 
   <!-- ID Card Section -->
-  <rect x="14" y="40" width="462" height="88" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-  <text x="26" y="56" class="mono lbl">ID_MANIFEST</text>
-  <text x="26" y="80" class="mono title">ametist</text>
-  <text x="26" y="98" class="mono role">systems &amp; android internals engineer</text>
-  <text x="26" y="116" class="mono tag" fill="#E6DB74">spec: v1.2 / kinetix-ds</text>
-  <text x="175" y="116" class="mono tag" fill="#75715E">·</text>
-  <text x="188" y="116" class="mono tag" fill="#A6E22E">arch: x86_64 / aarch64</text>
-  <text x="330" y="116" class="mono tag" fill="#75715E">·</text>
-  <text x="343" y="116" class="mono tag" fill="#66D9EF">zero-slop</text>
+  <rect x="14" y="42" width="462" height="96" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="60" class="mono lbl">ID_MANIFEST</text>
+  <text x="26" y="86" class="mono title">ametist1337</text>
+  <text x="26" y="106" class="mono role">systems &amp; android internals engineer</text>
+  <text x="26" y="125" class="mono tag" fill="#A6E22E">arch: x86_64 / aarch64</text>
+  <text x="175" y="125" class="mono tag" fill="#75715E">·</text>
+  <text x="188" y="125" class="mono tag" fill="#66D9EF">env: wayland / linux / android</text>
 
   <!-- Node 1: Workstation -->
-  <rect x="14" y="136" width="462" height="116" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-  <text x="26" y="153" class="mono node-hdr" fill="#A6E22E">node:workstation</text>
-  <text x="464" y="153" class="mono tag" fill="#75715E" text-anchor="end">[host / local]</text>
+  <rect x="14" y="150" width="462" height="154" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="172" class="mono node-hdr" fill="#A6E22E">node:workstation</text>
+  <text x="464" y="172" class="mono tag" fill="#75715E" text-anchor="end">[host / primary]</text>
   
-  <text x="26" y="172" class="mono spec-dim">cpu:</text>
-  <text x="65" y="172" class="mono spec-text">amd ryzen 7 5700x (8c/16t, 4.67 ghz)</text>
+  <text x="26" y="196" class="mono spec-dim">cpu:</text>
+  <text x="68" y="196" class="mono spec-text">amd ryzen 7 5700x (8c/16t, 4.67 ghz)</text>
 
-  <text x="26" y="189" class="mono spec-dim">ram:</text>
-  <text x="65" y="189" class="mono spec-text">16 gb ddr4-3200 · zram 15.5 gb swap</text>
+  <text x="26" y="217" class="mono spec-dim">ram:</text>
+  <text x="68" y="217" class="mono spec-text">16 gb ddr4-3200 · zram 15.5 gb swap</text>
 
-  <text x="26" y="206" class="mono spec-dim">gpu:</text>
-  <text x="65" y="206" class="mono spec-text">nvidia geforce gtx 1050 ti 4gb</text>
+  <text x="26" y="238" class="mono spec-dim">gpu:</text>
+  <text x="68" y="238" class="mono spec-text">nvidia geforce gtx 1050 ti 4gb</text>
 
-  <text x="26" y="223" class="mono spec-dim">os: </text>
-  <text x="65" y="223" class="mono spec-val">cachyos linux x86_64 [7.3-bore]</text>
+  <text x="26" y="259" class="mono spec-dim">os: </text>
+  <text x="68" y="259" class="mono spec-val">cachyos linux x86_64 [kernel 7.3-bore]</text>
 
-  <text x="26" y="240" class="mono spec-dim">wm: </text>
-  <text x="65" y="240" class="mono" fill="#66D9EF" font-size="10.5px">driftwm [wayland infinite canvas]</text>
+  <text x="26" y="280" class="mono spec-dim">wm: </text>
+  <text x="68" y="280" class="mono" fill="#66D9EF" font-size="11px">driftwm [wayland infinite canvas]</text>
 
   <!-- Node 2: Mobile Dev -->
-  <rect x="14" y="260" width="462" height="96" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-  <text x="26" y="277" class="mono node-hdr" fill="#66D9EF">node:mobile_dev</text>
-  <text x="464" y="277" class="mono tag" fill="#75715E" text-anchor="end">[target: tegu]</text>
+  <rect x="14" y="316" width="462" height="148" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+  <text x="26" y="338" class="mono node-hdr" fill="#66D9EF">node:mobile_dev</text>
+  <text x="464" y="338" class="mono tag" fill="#75715E" text-anchor="end">[target: tegu]</text>
 
-  <text x="26" y="296" class="mono spec-dim">dev: </text>
-  <text x="65" y="296" class="mono spec-text">google pixel 9a [android 16 / v15]</text>
+  <text x="26" y="364" class="mono spec-dim">dev: </text>
+  <text x="68" y="364" class="mono spec-text">google pixel 9a [android 16 / v15]</text>
 
-  <text x="26" y="313" class="mono spec-dim">root:</text>
-  <text x="65" y="313" class="mono" fill="#FD971F" font-size="10.5px">kernelsu · lsposed · su root-shell</text>
+  <text x="26" y="388" class="mono spec-dim">root:</text>
+  <text x="68" y="388" class="mono" fill="#FD971F" font-size="11px">kernelsu · lsposed · su root-shell</text>
 
-  <text x="26" y="330" class="mono spec-dim">link:</text>
-  <text x="65" y="330" class="mono spec-text">wireless adb [192.168.0.123] · pairing active</text>
+  <text x="26" y="412" class="mono spec-dim">link:</text>
+  <text x="68" y="412" class="mono spec-text">wireless adb [pairing active · tcp:5555]</text>
 
-  <text x="26" y="347" class="mono spec-dim">mods:</text>
-  <text x="65" y="347" class="mono spec-val">spotifyplus fe · pixelmediachip</text>
-
-  <!-- Node 3: GPU Compute Node -->
-  <rect x="14" y="364" width="462" height="102" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
-  <text x="26" y="381" class="mono node-hdr" fill="#FD971F">node:gpu_compute</text>
-  <text x="464" y="381" class="mono tag" fill="#75715E" text-anchor="end">[cluster: 192.168.0.177]</text>
-
-  <text x="26" y="400" class="mono spec-dim">host:</text>
-  <text x="65" y="400" class="mono spec-text">intel core i5-13400 (10c/16t) · 32 gb ddr4</text>
-
-  <text x="26" y="417" class="mono spec-dim">gpu: </text>
-  <text x="65" y="417" class="mono spec-text">geforce rtx 4060 ti 8gb vram</text>
-
-  <text x="26" y="434" class="mono spec-dim">llm: </text>
-  <text x="65" y="434" class="mono spec-val">qwen 3.5 9b abliterated [100% vram, 64k]</text>
-
-  <text x="26" y="451" class="mono spec-dim">asr: </text>
-  <text x="65" y="451" class="mono" fill="#A6E22E" font-size="10.5px">whisper-large-v3 turbo [cuda 12, ~0.6s]</text>
+  <text x="26" y="436" class="mono spec-dim">arch:</text>
+  <text x="68" y="436" class="mono spec-val">aarch64 / arm64-v8a</text>
 
   </g>
-  <g id="stack-gauges" transform="translate(498, 0)">
+  <g id="stack-pipeline" transform="translate(498, 0)">
     
   <defs>
     <style>
       .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, ui-monospace, monospace; }
       .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
-      .tech-name { font-size: 11.5px; fill: #F8F8F2; font-weight: 500; }
-      .pct { font-size: 10.5px; font-weight: 700; }
-      .tag { font-size: 9.5px; font-weight: 500; }
+      .bus-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 0.5px; }
+      .node-txt { font-size: 10.5px; font-weight: 600; }
+      .arrow-tag { font-size: 8.5px; font-weight: 500; }
+      .tag { font-size: 9.5px; font-weight: 600; }
     </style>
   </defs>
 
@@ -114,160 +96,91 @@
   <rect x="14" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="14" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="20" class="mono lbl">ametist@driftwm: ~ [stack:24seg_gauge]</text>
-  <text x="446" y="20" class="mono tag" fill="#E6DB74" text-anchor="end">kinetix-ode</text>
+  <text x="50" y="20" class="mono lbl">ametist1337@driftwm: ~ [stack:architecture_topology]</text>
+  <text x="446" y="20" class="mono tag" fill="#A6E22E" text-anchor="end">[topology: active]</text>
   <line x1="0" y1="30" x2="470" y2="30" stroke="#3E3D32" stroke-width="1"/>
 
-  <!-- rust -->
-  <text x="24" y="64" class="mono tech-name">rust</text>
+  <!-- bus:systems -->
   <g>
-    <rect x="184" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="192" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="200" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="208" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="216" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="224" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="232" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="240" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="248" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="256" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="264" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="272" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="280" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="288" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="296" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="304" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="312" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="320" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="328" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="336" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="344" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="352" y="56" width="6" height="9" rx="1.5" fill="#E6DB74"/>
-    <rect x="360" y="56" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="368" y="56" width="6" height="9" rx="1.5" fill="#3E3D32"/>
+    <rect x="14" y="38" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="52" class="mono bus-lbl" fill="#A6E22E">bus:systems</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="64" width="104" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
+    <text x="76" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">rust · c++</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ipc]</text>
+    <line x1="132" y1="76" x2="162" y2="76" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,76 160,73 160,79" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="64" width="112" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
+    <text x="224" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">wayland / drm</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="72" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[render]</text>
+    <line x1="284" y1="76" x2="314" y2="76" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,76 312,73 312,79" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="64" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
+    <text x="383" y="80" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">driftwm [canvas]</text>
   </g>
-  <text x="390" y="64" class="mono pct" fill="#E6DB74">91%</text>
-  <text x="446" y="64" class="mono tag" text-anchor="end" fill="#75715E">[systems]</text>
-  <!-- kotlin / compose -->
-  <text x="24" y="100" class="mono tech-name">kotlin / compose</text>
+  <!-- bus:mobile_internals -->
   <g>
-    <rect x="184" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="192" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="200" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="208" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="216" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="224" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="232" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="240" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="248" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="256" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="264" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="272" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="280" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="288" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="296" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="304" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="312" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="320" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="328" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="336" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="344" y="92" width="6" height="9" rx="1.5" fill="#A6E22E"/>
-    <rect x="352" y="92" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="360" y="92" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="368" y="92" width="6" height="9" rx="1.5" fill="#3E3D32"/>
+    <rect x="14" y="102" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="116" class="mono bus-lbl" fill="#66D9EF">bus:mobile_internals</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="128" width="104" height="24" rx="4" fill="#272822" stroke="#66D9EF" stroke-width="1"/>
+    <text x="76" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kotlin · flutter</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[binder]</text>
+    <line x1="132" y1="140" x2="162" y2="140" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,140 160,137 160,143" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="128" width="112" height="24" rx="4" fill="#272822" stroke="#FD971F" stroke-width="1"/>
+    <text x="224" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">android ndk</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="136" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[root]</text>
+    <line x1="284" y1="140" x2="314" y2="140" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,140 312,137 312,143" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="128" width="126" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
+    <text x="383" y="144" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kernelsu · lsposed</text>
   </g>
-  <text x="390" y="100" class="mono pct" fill="#A6E22E">87%</text>
-  <text x="446" y="100" class="mono tag" text-anchor="end" fill="#75715E">[mobile]</text>
-  <!-- c / c++ -->
-  <text x="24" y="136" class="mono tech-name">c / c++</text>
+  <!-- bus:frontend_motion -->
   <g>
-    <rect x="184" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="192" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="200" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="208" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="216" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="224" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="232" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="240" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="248" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="256" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="264" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="272" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="280" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="288" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="296" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="304" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="312" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="320" y="128" width="6" height="9" rx="1.5" fill="#66D9EF"/>
-    <rect x="328" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="336" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="344" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="352" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="360" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="368" y="128" width="6" height="9" rx="1.5" fill="#3E3D32"/>
+    <rect x="14" y="166" width="442" height="58" rx="6" fill="#1E1F1C" stroke="#3E3D32" stroke-width="1"/>
+    <text x="24" y="180" class="mono bus-lbl" fill="#FD971F">bus:frontend_motion</text>
+    
+    <!-- Node 1 -->
+    <rect x="24" y="192" width="104" height="24" rx="4" fill="#272822" stroke="#F92672" stroke-width="1"/>
+    <text x="76" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">frontend · ts</text>
+    
+    <!-- Arrow 1 -->
+    <text x="148" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[ode_math]</text>
+    <line x1="132" y1="204" x2="162" y2="204" stroke="#75715E" stroke-width="1"/>
+    <polygon points="164,204 160,201 160,207" fill="#75715E"/>
+    
+    <!-- Node 2 -->
+    <rect x="168" y="192" width="112" height="24" rx="4" fill="#272822" stroke="#E6DB74" stroke-width="1"/>
+    <text x="224" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">shaders / canvas</text>
+    
+    <!-- Arrow 2 -->
+    <text x="300" y="200" class="mono arrow-tag" fill="#75715E" text-anchor="middle">[monet]</text>
+    <line x1="284" y1="204" x2="314" y2="204" stroke="#75715E" stroke-width="1"/>
+    <polygon points="316,204 312,201 312,207" fill="#75715E"/>
+    
+    <!-- Node 3 -->
+    <rect x="320" y="192" width="126" height="24" rx="4" fill="#272822" stroke="#A6E22E" stroke-width="1"/>
+    <text x="383" y="208" class="mono node-txt" fill="#F8F8F2" text-anchor="middle">kinetix-ui ds</text>
   </g>
-  <text x="390" y="136" class="mono pct" fill="#66D9EF">75%</text>
-  <text x="446" y="136" class="mono tag" text-anchor="end" fill="#75715E">[low-level]</text>
-  <!-- linux / wayland -->
-  <text x="24" y="172" class="mono tech-name">linux / wayland</text>
-  <g>
-    <rect x="184" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="192" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="200" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="208" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="216" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="224" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="232" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="240" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="248" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="256" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="264" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="272" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="280" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="288" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="296" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="304" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="312" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="320" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="328" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="336" y="164" width="6" height="9" rx="1.5" fill="#FD971F"/>
-    <rect x="344" y="164" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="352" y="164" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="360" y="164" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="368" y="164" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-  </g>
-  <text x="390" y="172" class="mono pct" fill="#FD971F">83%</text>
-  <text x="446" y="172" class="mono tag" text-anchor="end" fill="#75715E">[compositor]</text>
-  <!-- web / ts -->
-  <text x="24" y="208" class="mono tech-name">web / ts</text>
-  <g>
-    <rect x="184" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="192" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="200" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="208" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="216" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="224" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="232" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="240" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="248" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="256" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="264" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="272" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="280" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="288" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="296" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="304" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="312" y="200" width="6" height="9" rx="1.5" fill="#F92672"/>
-    <rect x="320" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="328" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="336" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="344" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="352" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="360" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-    <rect x="368" y="200" width="6" height="9" rx="1.5" fill="#3E3D32"/>
-  </g>
-  <text x="390" y="208" class="mono pct" fill="#F92672">70%</text>
-  <text x="446" y="208" class="mono tag" text-anchor="end" fill="#75715E">[frontend]</text>
 
   </g>
   <g id="stack-vibecode" transform="translate(498, 244)">
@@ -278,7 +191,6 @@
       .lbl { font-size: 10px; fill: #75715E; letter-spacing: 0.5px; }
       .title { font-size: 14.5px; font-weight: 700; fill: #F8F8F2; }
       .sub { font-size: 10.5px; fill: #75715E; }
-      .tag { font-size: 9.5px; font-weight: 600; }
     </style>
   </defs>
 
@@ -289,8 +201,7 @@
   <rect x="14" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [runtime:antigravity]</text>
-  <text x="446" y="18" class="mono tag" fill="#A6E22E" text-anchor="end">[vibecoding: active]</text>
+  <text x="50" y="18" class="mono lbl">ametist1337@driftwm: ~ [runtime:antigravity]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
   <!-- Antigravity Faceted Logo Glyph (y: 42 to 92, x: 24 to 68) -->
@@ -323,7 +234,7 @@
     <text x="0" y="44" class="mono sub">
       <tspan fill="#75715E">agent: </tspan>
       <tspan fill="#66D9EF">google antigravity</tspan>
-      <tspan fill="#75715E"> · zero-slop autonomous coding</tspan>
+      <tspan fill="#75715E"> · autonomous pair programming</tspan>
     </text>
   </g>
 
@@ -348,7 +259,7 @@
   <rect x="14" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="24" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
   <rect x="34" y="12" width="6" height="6" rx="1.5" fill="#3E3D32"/>
-  <text x="50" y="18" class="mono lbl">ametist@driftwm: ~ [media:spotify_sync]</text>
+  <text x="50" y="18" class="mono lbl">ametist1337@driftwm: ~ [media:spotify_sync]</text>
   <text x="446" y="18" class="mono tag" fill="#75715E" text-anchor="end">[status: idle]</text>
   <line x1="0" y1="26" x2="470" y2="26" stroke="#3E3D32" stroke-width="1"/>
 
@@ -375,7 +286,6 @@
     </g>
 
     <!-- Meta / Client Info -->
-    <text x="272" y="54" class="mono meta">pipewire / adb</text>
     <text x="430" y="54" class="mono tag" fill="#66D9EF" text-anchor="end">[device: idle]</text>
   </g>
 
