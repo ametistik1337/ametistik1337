@@ -2,10 +2,6 @@
 
 # `ametist1337`
 
-```text
-systems & android internals engineer · cachyos linux · driftwm
-```
-
 <br/>
 
 <!-- Hyprland Master/Stack Tiling Workspace -->
