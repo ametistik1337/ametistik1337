@@ -28,9 +28,4 @@
 
 <br/>
 
-```text
-status: active · wm: driftwm (wayland) · stack: rust / kotlin / flutter / c++
-nodes: workstation (5700x / cachyos) · mobile_dev (pixel 9a / kernelsu)
-```
-
 </div>
