@@ -25,7 +25,7 @@ systems & android internals engineer · cachyos linux · driftwm · kinetix-ui
   </tr>
   <tr>
     <td valign="top">
-      <img src="assets/nowplaying.svg" width="470" alt="Spotify Telemetry" />
+      <img src="http://r1282574.s2591.vm.mydomain.zone/nowplaying.svg" width="470" alt="Spotify Telemetry" />
     </td>
   </tr>
 </table>
